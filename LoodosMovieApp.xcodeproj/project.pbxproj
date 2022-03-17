@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43CE831A27E36D9800CAABF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43CE831927E36D9800CAABF5 /* GoogleService-Info.plist */; };
 		43CE831C27E3726100CAABF5 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE831B27E3726100CAABF5 /* Loading.swift */; };
+		43CE831E27E37A7400CAABF5 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CE831D27E37A7300CAABF5 /* Detail.storyboard */; };
+		43CE832027E37A9800CAABF5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE831F27E37A9800CAABF5 /* DetailViewController.swift */; };
 		43E9904B27E3153600FB5C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9904A27E3153600FB5C25 /* AppDelegate.swift */; };
 		43E9904D27E3153600FB5C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9904C27E3153600FB5C25 /* SceneDelegate.swift */; };
 		43E9904F27E3153600FB5C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9904E27E3153600FB5C25 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		0A211183E59AE2D79D6B661C /* Pods-LoodosMovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieApp.debug.xcconfig"; path = "Target Support Files/Pods-LoodosMovieApp/Pods-LoodosMovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		43CE831927E36D9800CAABF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43CE831B27E3726100CAABF5 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		43CE831D27E37A7300CAABF5 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		43CE831F27E37A9800CAABF5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		43E9904727E3153600FB5C25 /* LoodosMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E9904A27E3153600FB5C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E9904C27E3153600FB5C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				43E9905027E3153600FB5C25 /* Main.storyboard */,
+				43CE831D27E37A7300CAABF5 /* Detail.storyboard */,
 				43E9905527E3153900FB5C25 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -129,8 +134,9 @@
 		43E9906127E33A0400FB5C25 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				43E9904E27E3153600FB5C25 /* ViewController.swift */,
 				43E9907127E3403600FB5C25 /* SplashViewController.swift */,
+				43E9904E27E3153600FB5C25 /* ViewController.swift */,
+				43CE831F27E37A9800CAABF5 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 				43CE831A27E36D9800CAABF5 /* GoogleService-Info.plist in Resources */,
 				43E9905427E3153900FB5C25 /* Assets.xcassets in Resources */,
 				43E9905227E3153600FB5C25 /* Main.storyboard in Resources */,
+				43CE831E27E37A7400CAABF5 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CE832027E37A9800CAABF5 /* DetailViewController.swift in Sources */,
 				43E9906C27E33D0100FB5C25 /* Movie.swift in Sources */,
 				43E9904F27E3153600FB5C25 /* ViewController.swift in Sources */,
 				43E9904B27E3153600FB5C25 /* AppDelegate.swift in Sources */,

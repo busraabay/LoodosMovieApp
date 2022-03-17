@@ -59,16 +59,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return UITableViewCell()
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//        Analytics.logEvent("movieDetail", parameters: ["name": movie?.title, "id": movie?.imdbID])
-//        let selectedMovie = searchMovie?.search?[indexPath.row]
-//        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-//        vc.modalPresentationStyle = .fullScreen
-//        vc.id = selectedMovie?.imdbID
-//        show(vc, sender: nil)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let selectedMovie = searchMovie?.search?[indexPath.row]
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.id = selectedMovie?.imdbID
+        show(vc, sender: nil)
+    }
 }
 
 //MARK: - SearchBar Delegate

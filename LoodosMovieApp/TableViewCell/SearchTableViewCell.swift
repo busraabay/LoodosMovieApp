@@ -17,6 +17,9 @@ class SearchTableViewCell: UITableViewCell {
  
     @IBOutlet weak var moviesNameLabel: UILabel!
     @IBOutlet weak var moviesImageView: UIImageView!
+    @IBOutlet weak var releaseLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +33,8 @@ class SearchTableViewCell: UITableViewCell {
     func configureCell(search: SearchMovie) {
         moviesNameLabel.text = search.title?.uppercased()
         moviesImageView.kf.setImage(with: URL(string: search.poster ?? ""))
+        typeLabel.text = search.type
+        releaseLabel.text = search.year
         
     }
     

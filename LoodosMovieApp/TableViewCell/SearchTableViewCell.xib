@@ -23,28 +23,46 @@
                             <constraint firstAttribute="width" constant="108" id="SB6-UE-4gI"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADz-uV-ryr">
-                        <rect key="frame" x="128" y="16" width="184" height="22"/>
-                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADz-uV-ryr">
+                        <rect key="frame" x="128" y="16" width="36" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZv-Z5-R7l">
+                        <rect key="frame" x="128" y="55.5" width="30.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-hj-sAA">
+                        <rect key="frame" x="273.5" y="55.5" width="30.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="ADz-uV-ryr" secondAttribute="trailing" constant="8" id="9Cy-sC-3oW"/>
+                    <constraint firstAttribute="trailing" secondItem="Lhf-hj-sAA" secondAttribute="trailing" constant="16" id="7FM-nC-n0m"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ADz-uV-ryr" secondAttribute="trailing" constant="8" id="9Cy-sC-3oW"/>
+                    <constraint firstAttribute="bottom" secondItem="Lhf-hj-sAA" secondAttribute="bottom" constant="8" id="BYA-uf-qA2"/>
                     <constraint firstItem="ADz-uV-ryr" firstAttribute="leading" secondItem="Kyv-YB-BS3" secondAttribute="trailing" constant="8" id="Br9-lL-tm9"/>
+                    <constraint firstItem="gZv-Z5-R7l" firstAttribute="leading" secondItem="Kyv-YB-BS3" secondAttribute="trailing" constant="8" id="GgH-W7-PBu"/>
                     <constraint firstItem="ADz-uV-ryr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="QbN-Zm-N3K"/>
                     <constraint firstItem="Kyv-YB-BS3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="cFh-pu-Tdt"/>
                     <constraint firstItem="Kyv-YB-BS3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="ekN-h4-XaS"/>
                     <constraint firstAttribute="bottom" secondItem="Kyv-YB-BS3" secondAttribute="bottom" constant="4" id="n3k-Ob-ZqQ"/>
+                    <constraint firstAttribute="bottom" secondItem="gZv-Z5-R7l" secondAttribute="bottom" constant="8" id="pvq-ke-eKw"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="moviesImageView" destination="Kyv-YB-BS3" id="GQc-TK-o5q"/>
                 <outlet property="moviesNameLabel" destination="ADz-uV-ryr" id="bWV-Cb-235"/>
+                <outlet property="releaseLabel" destination="Lhf-hj-sAA" id="RW0-7z-csc"/>
+                <outlet property="typeLabel" destination="gZv-Z5-R7l" id="Co5-JU-sv6"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="155.35714285714286"/>
+            <point key="canvasLocation" x="173.91304347826087" y="184.82142857142856"/>
         </tableViewCell>
     </objects>
 </document>
