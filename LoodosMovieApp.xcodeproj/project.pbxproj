@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CE831A27E36D9800CAABF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43CE831927E36D9800CAABF5 /* GoogleService-Info.plist */; };
+		43CE831C27E3726100CAABF5 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE831B27E3726100CAABF5 /* Loading.swift */; };
 		43E9904B27E3153600FB5C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9904A27E3153600FB5C25 /* AppDelegate.swift */; };
 		43E9904D27E3153600FB5C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9904C27E3153600FB5C25 /* SceneDelegate.swift */; };
 		43E9904F27E3153600FB5C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9904E27E3153600FB5C25 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0A211183E59AE2D79D6B661C /* Pods-LoodosMovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieApp.debug.xcconfig"; path = "Target Support Files/Pods-LoodosMovieApp/Pods-LoodosMovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		43CE831927E36D9800CAABF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43CE831B27E3726100CAABF5 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		43E9904727E3153600FB5C25 /* LoodosMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E9904A27E3153600FB5C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E9904C27E3153600FB5C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				43E9906227E33A2F00FB5C25 /* TableViewCell */,
 				43E9905327E3153900FB5C25 /* Assets.xcassets */,
 				43E9905827E3153900FB5C25 /* Info.plist */,
+				43CE831927E36D9800CAABF5 /* GoogleService-Info.plist */,
 			);
 			path = LoodosMovieApp;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				43E9906827E33C8800FB5C25 /* Constants.swift */,
+				43CE831B27E3726100CAABF5 /* Loading.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			files = (
 				43E9905727E3153900FB5C25 /* LaunchScreen.storyboard in Resources */,
 				43E9907627E342FD00FB5C25 /* SearchTableViewCell.xib in Resources */,
+				43CE831A27E36D9800CAABF5 /* GoogleService-Info.plist in Resources */,
 				43E9905427E3153900FB5C25 /* Assets.xcassets in Resources */,
 				43E9905227E3153600FB5C25 /* Main.storyboard in Resources */,
 			);
@@ -292,6 +299,7 @@
 				43E9906927E33C8800FB5C25 /* Constants.swift in Sources */,
 				43E9906E27E33D1200FB5C25 /* MovieDetail.swift in Sources */,
 				43E9907027E33FB500FB5C25 /* NetworkConnection.swift in Sources */,
+				43CE831C27E3726100CAABF5 /* Loading.swift in Sources */,
 				43E9907227E3403700FB5C25 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

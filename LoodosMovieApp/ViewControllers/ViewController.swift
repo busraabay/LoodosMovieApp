@@ -30,13 +30,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func loadSearchMovies(title: String) {
+        Loading.shared.show(in: self.view)
         networkManager.fetchSearchMovies(title: title) { [weak self] result in
             guard let strongSelf = self else { return }
             switch result {
             case .success(let response):
                 strongSelf.searchMovie = response
                 strongSelf.searchTableView.reloadData()
+                Loading.shared.hide()
             case .failure(let error):
+                Loading.shared.hide()
                 print(error.localizedDescription)
             }
         }
