@@ -88,7 +88,6 @@
 				0A211183E59AE2D79D6B661C /* Pods-LoodosMovieApp.debug.xcconfig */,
 				6C63310871D8F9B05C6A5016 /* Pods-LoodosMovieApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -359,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MBYGYN4YX;
+				DEVELOPMENT_TEAM = GYG2PZZTM5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoodosMovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -388,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MBYGYN4YX;
+				DEVELOPMENT_TEAM = GYG2PZZTM5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoodosMovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
