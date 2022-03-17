@@ -9,4 +9,9 @@ target 'LoodosMovieApp' do
   pod 'Moya', '~> 15.0'
   pod 'Wormholy', '~> 1.5.2' #,  :configurations => ['Debug']
   pod 'Kingfisher'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging' 
+  pod 'Firebase/Core' 
+  pod 'Firebase/RemoteConfig'
+  pod 'MaterialComponents/ActivityIndicator'
 end
