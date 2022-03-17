@@ -15,7 +15,6 @@ final class NetworkConnection {
     private let monitor: NWPathMonitor
     
     public private(set) var isConnected: Bool = false
-    
     public private(set) var connectionType: ConnectionType = .unknown
     
     enum ConnectionType {
@@ -24,6 +23,7 @@ final class NetworkConnection {
         case ethernet
         case unknown
     }
+    
     private init() {
         monitor = NWPathMonitor()
     }
@@ -34,7 +34,6 @@ final class NetworkConnection {
             self?.isConnected = path.status == .satisfied
             self?.getConnectionType(path)
             print(self?.isConnected ?? "N/A")
-            
         }
     }
     

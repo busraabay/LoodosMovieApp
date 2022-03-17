@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchTableView.delegate = self
         searchTableView.dataSource = self
         
-//        loadSearchMovies(title: "spider")
+        self.navigationItem.title = "Loodos Movie"
         
         searchBar.delegate = self
         searchBar.placeholder = "Search Movie"

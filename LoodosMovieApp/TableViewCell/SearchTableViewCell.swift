@@ -20,22 +20,18 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var releaseLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
     
     func configureCell(search: SearchMovie) {
         moviesNameLabel.text = search.title?.uppercased()
         moviesImageView.kf.setImage(with: URL(string: search.poster ?? ""))
-        typeLabel.text = search.type
+        typeLabel.text = search.type?.uppercased()
         releaseLabel.text = search.year
-        
     }
-    
 }

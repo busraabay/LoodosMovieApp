@@ -17,7 +17,7 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         checkNetworkConnection()
         remoteConfig = RemoteConfig.remoteConfig()
         setupRemoteConfigDefaults()
@@ -33,7 +33,6 @@ class SplashViewController: UIViewController {
     func fetchRemoteConfig(){
         remoteConfig.fetch(withExpirationDuration: 0) { [unowned self] (status, error) in
             guard error == nil else { return }
-            print("Got the value from Remote Config!")
             remoteConfig.activate()
             self.displayNewValues()
     }}
@@ -46,25 +45,19 @@ class SplashViewController: UIViewController {
     func checkNetworkConnection() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             Loading.shared.show(in: self.view)
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            vc.modalPresentationStyle = .fullScreen
-            self.show(vc, sender: nil)
-//            if NetworkConnection.shared.isConnected {
-//                print("You're connected")
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//                vc.modalPresentationStyle = .fullScreen
-//                self.show(vc, sender: nil)
-//
-//            }else{
-//                let alertController = UIAlertController(title: "Error", message: "Try turning on your Wifi or Mobile Data for using the app", preferredStyle: .alert)
-//                alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { _ in
-//                    self.checkNetworkConnection()
-//                }))
-//                self.present(alertController, animated: true, completion: nil)
-//                print("You're not connected")
-//            }
+            if NetworkConnection.shared.isConnected {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                let navigationController = UINavigationController(rootViewController: vc)
+                navigationController.modalPresentationStyle = .fullScreen
+                self.show(navigationController, sender: nil)
+            }else{
+                let alertController = UIAlertController(title: "Error", message: "Try turning on your Wifi or Mobile Data for using the app", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { _ in
+                    self.checkNetworkConnection()
+                }))
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
     }
 }

@@ -14,15 +14,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="LoodosMovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="83g-gq-708">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-ad-fG9">
-                                <rect key="frame" x="0.0" y="56" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vud-Hq-UKV">
-                                <rect key="frame" x="0.0" y="107" width="414" height="735"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="A3Q-uD-hqv"/>
@@ -49,7 +49,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1871.0144927536232" y="128.57142857142856"/>
+            <point key="canvasLocation" x="2773.913043478261" y="128.57142857142856"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="Ryh-G0-p7w">
@@ -77,31 +77,11 @@
                     </view>
                     <connections>
                         <outlet property="remoteConfigLabel" destination="0YK-d8-xu9" id="mvR-NY-amo"/>
-                        <segue destination="W0I-fO-Xg0" kind="show" id="HpM-FD-XgN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7q-2Z-MHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="129"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BeQ-Vk-JHr">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W0I-fO-Xg0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="1W0-ha-qek"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wsU-x0-Cdl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B7o-DO-NP3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eNj-pr-IoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="960.86956521739137" y="128.57142857142856"/>
+            <point key="canvasLocation" x="1830" y="129"/>
         </scene>
     </scenes>
     <resources>

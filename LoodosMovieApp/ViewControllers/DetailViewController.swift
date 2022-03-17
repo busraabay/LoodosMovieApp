@@ -19,7 +19,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var actorsNameLabel: UILabel!
     @IBOutlet weak var awardsLabel: UILabel!
     
-    
     let networkManager = NetworkManager()
     var movieDetail: MovieDetail?
     var id: String?
@@ -48,7 +47,6 @@ class DetailViewController: UIViewController {
                 strongSelf.awardsLabel.text = self?.movieDetail?.awards
                 strongSelf.actorsNameLabel.text = self?.movieDetail?.actors
                 strongSelf.genreLabel.text = self?.movieDetail?.genre
-
                 Loading.shared.hide()
             case .failure(let error):
                 print(error.localizedDescription)
