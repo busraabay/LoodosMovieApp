@@ -47,6 +47,8 @@ class DetailViewController: UIViewController {
                 strongSelf.awardsLabel.text = self?.movieDetail?.awards
                 strongSelf.actorsNameLabel.text = self?.movieDetail?.actors
                 strongSelf.genreLabel.text = self?.movieDetail?.genre
+                
+                AnalyticsHelper.movieDetailClicked(moviesNameLabel: strongSelf.moviesNameLabel.text ?? "", overviewLabel: strongSelf.overviewLabel.text ?? "", releaseLabel: strongSelf.releaseLabel.text ?? "", imdbLabel: strongSelf.imdbLabel.text ?? "", actorsNameLabel: strongSelf.actorsNameLabel.text ?? "", genreLabel: strongSelf.genreLabel.text ?? "")
                 Loading.shared.hide()
             case .failure(let error):
                 print(error.localizedDescription)
