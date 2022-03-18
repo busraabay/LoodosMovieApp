@@ -47,7 +47,7 @@ class SplashViewController: UIViewController {
             Loading.shared.show(in: self.view)
             if NetworkConnection.shared.isConnected {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
                 let navigationController = UINavigationController(rootViewController: vc)
                 navigationController.modalPresentationStyle = .fullScreen
                 self.show(navigationController, sender: nil)
